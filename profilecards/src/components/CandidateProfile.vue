@@ -92,15 +92,15 @@
     color: #ffffff;
     padding: 20px;
     border-radius: 16px;
-    text-align: center;
+    
   }
   
   /* Header Section Styling */
   .profile-header {
     position: relative;
     padding: 20px;
-    background-image: url(../assets/img/house-of-the-dragon-ka-1920.jpg);
-    background-size: contain;
+    background-image: url(../assets/img/MOUNTAIN.jpg);
+    background-size: cover;
     
     
   }
@@ -111,14 +111,17 @@
     border-radius: 50%; /* Circular profile photo */
     margin: 0 auto;
   }
+  
   h1 {
     font-size: 40px;
     margin: 10px 0 5px;
+    text-align: center;
   }
   
   p {
     font-size: 15px;
     color: #cccccc;
+    text-align: center;
   }
   .action-icons {
     display: flex;
