@@ -3,10 +3,17 @@
       <!-- Header Section: Displays profile photo, name, location, and action icons -->
       <div class="profile-header">
         <!-- Profile photo in circular style -->
-        <img class="profile-photo" :src="photoUrl" alt="Profile photo" />
-        <!-- Candidate's name and location -->
-        <h1>{{ name }}</h1>
-        <p>{{ location }}</p>
+         
+        <div style="display: flex; align-items: center;">
+            <img :src="photoUrl" alt="Image" style="width: 120px; height: 120px; margin-right: 10px; border-radius: 50%;">
+             <span class="profile_name" >{{name}}
+
+               <p>{{ location }}</p>
+             </span> 
+              
+        </div>
+
+        
         <!-- Action icons for messaging and saving the candidate -->
         <div class="action-icons">
           <button @click="sendMessage">💬</button> <!-- Message icon button -->
@@ -98,23 +105,16 @@
   /* Header Section Styling */
   .profile-header {
     position: relative;
-    padding: 20px;
+    padding: 50px;
     background-image: url(../assets/img/MOUNTAIN.jpg);
     background-size: cover;
     
     
   }
-  .profile-photo {
-    
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* Circular profile photo */
-    margin: 0 auto;
-  }
-  
-  h1 {
+ 
+  .profile_name {
     font-size: 40px;
-    margin: 10px 0 5px;
+    margin: 20px 1px 5px 60px;
     text-align: center;
   }
   
@@ -125,12 +125,12 @@
   }
   .action-icons {
     display: flex;
-    gap: 15px;
+    gap: 5px;
     justify-content: center;
-    margin-top: 10px;
+    
   }
   .action-icons button {
-    font-size: 24px;
+    font-size: 14px;
     color: #ffffff;
     background: none;
     border: none;
@@ -154,16 +154,17 @@
     font-size: 14px;
     color: #cccccc;
     text-align: left;
+    font-family: 'Times New Roman', Times, serif;
   }
   .portfolio-images {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     justify-content: center;
     flex-wrap: wrap; /* Allows multiple rows for images */
   }
   .portfolio-images img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 4px; /* Rounded corners for images */
   }
   
